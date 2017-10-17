@@ -1,0 +1,46 @@
+---
+title: "Untitled"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+a <- array(1:12,dim=c(3,4))
+print(a)
+a[2,2]
+a[2,]
+model <- lm(formula=dist ~ speed, data=cars)
+summary(model)
+str(cars)
+model <- lm(formula=displ ~ cyl + cty, data=mpg)
+summary(model)
+getwd()
+vector1 <- 1:10 + 2
+43 %/% 7
+temp <- c(27, 29, 23, 14,NA)
+mean(temp)
+mean(temp,na.rm=T)
+is.na(temp)
